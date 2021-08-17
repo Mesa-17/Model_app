@@ -25,7 +25,6 @@ from keras.layers import LSTM
 from keras.layers import Dropout
 from sklearn.metrics import mean_squared_error,accuracy_score,r2_score
 from statsmodels.tsa.stattools import adfuller
-from statsmodels.graphics.tsaplots import plot_acf
 from statsmodels.tsa.arima_model import ARIMA
 import math
 
