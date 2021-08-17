@@ -251,7 +251,7 @@ comp_name = st.selectbox("Select Company Dataset", ("Facebook","Apple","Amazon",
 st.write(" ## Company : ", comp_name)
 
 def dataset(company_name):
-    rg ="C:\\Users\\sande\\Technocolabs_ML\\" + comp_name +'.csv'
+    rg = comp_name +'.csv'
     return pd.read_csv(rg)
 
 df = dataset(comp_name)
