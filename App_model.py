@@ -103,8 +103,14 @@ def LR(df):
    
     hgh = col5.text_input("High",0)
     lw = col6.text_input("Low",0)
+    
+    colx,coly,colz= st.columns(3)
+    day = colx.text_input("Day",0)
+    mnth = coly.text_input("Month",0)
+    year = colz.text_input("Year",0)
+    
     st.markdown("")
-    a=reg.predict(ss.transform([[vol,opn,hgh,lw,4,8,2021]]))
+    a=reg.predict(ss.transform([[vol,opn,hgh,lw,day,mnth,year]]))
     st.markdown("")
     
     if st.button('Predict'):
